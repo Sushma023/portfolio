@@ -43,13 +43,21 @@ nav ul li a:hover {
 }
 
 .profile {
-    width: 90px;
-    height: 90px;
+    width: 180px;              /* adjust size */
+    height: 180px;
     object-fit: cover;
-    border: 3px solid white;
-    border-radius: 8px;
+
+    border-radius: 12px;       /* soft square corners */
+    border: 4px solid white;   /* white frame */
+
+    /* smooth professional shadow */
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.2),
+        0 5px 10px rgba(0, 0, 0, 0.1);
+
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
+    background: white;
 }
 
 /* Button */
