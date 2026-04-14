@@ -3,8 +3,6 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(to right, #667eea, #764ba2);
     color: #333;
-    border: 5px solid red;
-
 }
 
 /* Navbar */
