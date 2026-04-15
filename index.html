@@ -3,40 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Sushma Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navbar -->
 <nav>
-    <h2>Sushma</h2>
+    <h2 class="logo">Sushma</h2>
     <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<!-- Home -->
-<section id="home" class="home">
-    <img src="images/profile.jpg" alt="profile" class="profile">
-    <link rel="stylesheet" href="style.css">
-    <h1 style="color:black;">Hello, I'm Sushma 👋</h1>
-<p style="color:black;">Data Analyst | Python | SQL | Power BI</p>
-    <a href="Sushma_Resume_OnePage.pdf" download class="btn">
-  Download Resume
-</a>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <img src="images/profile.jpg" alt="Sushma" class="profile-img">
+        <h1>Hello, I'm <span>Sushma</span> 👋</h1>
+        <p class="typing">Data Analyst | Python | SQL | Power BI</p>
+        <a href="resume.pdf" download class="btn">Download Resume</a>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section hidden">
+    <h1>About Me</h1>
+    <p>
+        I am a passionate Data Analyst skilled in Python, SQL, and Power BI. 
+        I enjoy transforming raw data into meaningful insights and building dashboards 
+        that help in decision-making. I am continuously learning and improving my skills.
+    </p>
+</section>
+
+<!-- Education -->
+<section id="education" class="section hidden">
+    <h1>Education</h1>
+    <div class="edu-card">
+        <h3>MCA (Pursuing)</h3>
+        <p>MIT Thandavpura</p>
+    </div>
+    <div class="edu-card">
+        <h3>BCA</h3>
+        <p>Hindustan College</p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section hidden">
+    <h1>Skills</h1>
+
+    <p>Python (NumPy, Pandas)</p>
+    <div class="bar"><div style="--width:85%"></div></div>
+
+    <p>SQL & PostgreSQL</p>
+    <div class="bar"><div style="--width:80%"></div></div>
+
+    <p>Power BI</p>
+    <div class="bar"><div style="--width:75%"></div></div>
+
+    <p>Git & GitHub</p>
+    <div class="bar"><div style="--width:70%"></div></div>
 </section>
 
 <!-- Projects -->
-<section id="projects">
+<section id="projects" class="section hidden">
     <h1>Projects</h1>
     <div class="cards">
         <div class="card">
             <h3>Sales Dashboard</h3>
-            <p>Analyzed sales data using Python & visualized trends.</p>
+            <p>Analyzed sales data using Python.</p>
         </div>
         <div class="card">
             <h3>Data Cleaning</h3>
@@ -44,46 +85,19 @@
         </div>
         <div class="card">
             <h3>Power BI Report</h3>
-            <p>Built interactive dashboard for business insights.</p>
+            <p>Built interactive dashboards.</p>
         </div>
     </div>
 </section>
 
-<!-- Skills -->
-<section id="skills">
-    <h1>Skills</h1>
-
-    <p>Python-numpy,pandas,matplotlib</p>
-    <div class="bar"><div style="width:80%"></div></div>
-
-    <p>DB-sql,PostgreSQL</p>
-    <div class="bar"><div style="width:75%"></div></div>
-
-    <p>Power BI</p>
-    <div class="bar"><div style="width:70%"></div></div>
-
-    <p>jira</p>
-    <div class="bar"><div style="width:70%"></div></div>
-
-    <p>Git & Github</p>
-    <div class="bar"><div style="width:70%"></div></div>
-
-    <p>Power BI</p>
-    <div class="bar"><div style="width:70%"></div></div>
-
-</section>
-
 <!-- Contact -->
-<section id="contact">
+<section id="contact" class="section hidden">
     <h1>Contact</h1>
-    <p>Email: sushma.m8104@gmail.com</p>
-    <p>Call: 7829128142</p>
-    <p>
-        LinkedIn: 
-        <a href="https://www.linkedin.com/in/sushma-m-72b3a53b7" target="_blank">
-            Visit My Profile
-        </a>
-    </p>
+    <div class="contact-box">
+        <p>Email: sushma.m8104@gmail.com</p>
+        <p>Phone: 7829128142</p>
+        <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+    </div>
 </section>
 
 <script src="script.js"></script>
